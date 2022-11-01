@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PluginFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Plugins>
+		<Plugin Description="Main Forms">
+			<PluginType>ComponentLibrary</PluginType>
+			<Component />
+			<PluginFile>ui.dll</PluginFile>
+		</Plugin>
+		<Plugin Description="Broadcast Forms">
+			<PluginType>ComponentLibrary</PluginType>
+			<Component />
+			<PluginFile>uibroadcast.dll</PluginFile>
+		</Plugin>
+		<Plugin Description="Interactive Forms">
+			<PluginType>ComponentLibrary</PluginType>
+			<Component />
+			<PluginFile>uiinteractive.dll</PluginFile>
+		</Plugin>
+		<Plugin Description="Query Forms">
+			<PluginType>ComponentLibrary</PluginType>
+			<Component />
+			<PluginFile>uiqueries.dll</PluginFile>
+		</Plugin>
+		<Plugin Description="Other Forms">
+			<PluginType>ComponentLibrary</PluginType>
+			<Component />
+			<PluginFile>uiutility.dll</PluginFile>
+		</Plugin>
+		<Plugin Description="Admin Forms">
+			<PluginType>ComponentLibrary</PluginType>
+			<Component />
+			<PluginFile>uiAdmin.dll</PluginFile>
+		</Plugin>
+		<Plugin Description="Surveillance Forms">
+			<PluginType>ComponentLibrary</PluginType>
+			<Component />
+			<PluginFile>uiSurveillance.dll</PluginFile>
+		</Plugin>
+		<Plugin Description="RTD Wrapper">
+			<PluginType>ComponentLibrary</PluginType>
+			<Component />
+			<PluginFile>RTDWrapper.dll</PluginFile>
+		</Plugin>
+	</Plugins>
+	<PluginDiversions />
+	<MenuStructure MenuCode="MainMenuStructure">
+		<ChildMenus>
+			<MenuField MenuCode="File" MenuHeader="&amp;File">
+				<ChildMenus>
+					<MenuField MenuCode="Workspace" MenuHeader="&amp;Workspace">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Configurations" MenuHeader="&amp;Configuration">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Refresh Database" MenuHeader="&amp;Refresh Database">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Change Password" MenuHeader="Change Password">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Logout" MenuHeader="Ex&amp;it">
+						<ChildMenus />
+					</MenuField>
+				</ChildMenus>
+			</MenuField>
+			<MenuField MenuCode="Market" MenuHeader="M&amp;arket">
+				<ChildMenus>
+					<MenuField MenuCode="MARKET_WATCH" MenuHeader="M&amp;arket Watch">
+						<ChildMenus>
+							<MenuField MenuCode="New MarketWatch" MenuHeader="&amp;New MarketWatch" MenuShortcut="CtrlM">
+								<ChildMenus />
+							</MenuField>
+						</ChildMenus>
+					</MenuField>
+				</ChildMenus>
+			</MenuField>
+			<MenuField MenuCode="Trading" MenuHeader="&amp;Trading">
+				<ChildMenus>
+					<MenuField MenuCode="ORDER_BOOK" MenuHeader="&amp;Order book" MenuShortcut="CtrlF3">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="TRADE_BOOK" MenuHeader="&amp;Trade book" MenuShortcut="CtrlF8">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="NET_POSITION" MenuHeader="&amp;Net Position" MenuShortcut="CtrlP">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="LIMITS" MenuHeader="&amp;Limits" MenuShortcut="CtrlT">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="FAST_ORDER_MODIFY" MenuHeader="&amp;Fast Order Modify" MenuShortcut="ShiftF2">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="ONLINE_CONFIRMATIONS" MenuHeader="&amp;ONLINE_CONFIRMATIONS" MenuShortcut="F7">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="OrderEntry" MenuHeader="&amp;OrderEntry">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="CMOrderEntry" MenuHeader="&amp;CMOrderEntry">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Cover_Order_Entry" MenuHeader="&amp;Cover Order Entry">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="BracketOrder" MenuHeader="&amp;BracketOrder">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="FOOrderEntry" MenuHeader="&amp;FOOrderEntry">
+						<ChildMenus />
+					</MenuField>
+				</ChildMenus>
+			</MenuField>
+			<MenuField MenuCode="Queries" MenuHeader="&amp;Queries">
+				<ChildMenus>
+					<MenuField MenuCode="Top Gainers" MenuHeader="&amp;Top Gainers">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Top Losers" MenuHeader="&amp;Top Losers">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Top Instruments Vol" MenuHeader="&amp;Top Instruments Vol">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Top Instruments OI" MenuHeader="&amp;Top Instruments OI">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Most Active Contracts" MenuHeader="&amp;Most Active Contracts">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Index Inquiry" MenuHeader="&amp;Index Inquiry">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Market Inquiry" MenuHeader="&amp;Market Inquiry">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="MarketMovement" MenuHeader="&amp;Market Movement">
+						<ChildMenus />
+					</MenuField>
+				</ChildMenus>
+			</MenuField>
+			<MenuField MenuCode="Reports" MenuHeader="&amp;Reports">
+				<ChildMenus>
+					<MenuField MenuCode="Trades Done" MenuHeader="&amp;Trades Done">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Open Orders" MenuHeader="O&amp;pen Orders">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Online Backup" MenuHeader="&amp;Online Backup">
+						<ChildMenus />
+					</MenuField>
+					<MenuField MenuCode="Bhav Copy" MenuHeader="&amp;Bhav Copy">
+						<ChildMenus />
+					</MenuField>
+				</ChildMenus>
+			</MenuField>
+			<MenuField MenuCode="Tools" MenuHeader="T&amp;ools">
+				<ChildMenus>
+					<MenuField MenuCode="MW Alerts" MenuHeader="&amp;TWS Alerts">
+						<ChildMenus />
+					</MenuField>
+				</ChildMenus>
+				<ChildMenus>
+					<MenuField MenuCode="Portfolio" MenuHeader="&amp;Portfolio" MenuShortcut="F10">
+						<ChildMenus />
+					</MenuField>
+				</ChildMenus>
+				<ChildMenus>
+					<MenuField MenuCode="InstrumentWizardForm" MenuHeader="&amp;InstrumentWizard" MenuShortcut="F9">
+						<ChildMenus />
+					</MenuField>
+				</ChildMenus>
+				<ChildMenus>
+					<MenuField MenuCode="ClientMaintainance" MenuHeader="Client Maintainance">
+						<ChildMenus />
+					</MenuField>
+				</ChildMenus>
+				<ChildMenus>
+					<MenuField MenuCode="OptionsCalculator" MenuHeader="&amp;OptionsCalculator">
+						<ChildMenus />
+					</MenuField>
+				</ChildMenus>
+                                    <MenuField MenuCode="Jobbing Strategy" MenuHeader="&amp;JobbingStrategy">
+						<ChildMenus /> 
+					</MenuField>
+			</MenuField>
+		</ChildMenus>
+	</MenuStructure>
+	<MenuTypes>
+		<MenuType>
+			<MenuCaption>Logout</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Logout</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Alerts Display</MenuCaption>
+			<TypeName>NeatXSTWS.UI.AlertDisplay</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>MW Alerts</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Alert</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Graphs</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Graphs</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Market By Price</MenuCaption>
+			<TypeName>NeatXSTWS.UI.MBP</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Auction MBO</MenuCaption>
+			<TypeName>NeatXSTWS.UI.AuctionMBO</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Lock Workstation</MenuCaption>
+			<TypeName>NeatXSTWS.UI.LockWorkstation</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Normal</MenuCaption>
+			<TypeName>NeatXSTWS.UI.MarketWatch</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>MarketWatch</MenuCaption>
+			<TypeName>NeatXSTWS.UI.MarketWatch</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Online Confirmations</MenuCaption>
+			<TypeName>NeatXSTWS.UI.OnlineConfirmations</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Message Log</MenuCaption>
+			<TypeName>NeatXSTWS.UI.OnlineConfirmations</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>New Ticker</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Ticker</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>NIFTY</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Ticker</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>SENSEX</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Ticker</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Ticker Wizard</MenuCaption>
+			<TypeName>NeatXSTWS.UI.TickerWizard</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Change Password</MenuCaption>
+			<TypeName>NeatXSTWS.UI.ChangePassword</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Instrument Wizard</MenuCaption>
+			<TypeName>NeatXSTWS.UI.InstrumentWizard</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Limits</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Limits</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>CM Limits</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Limits</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>FAO Limits</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Limits</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Client Limit Maintenance</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.LimitSetting</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>About NeatXS</MenuCaption>
+			<TypeName>NeatXSTWS.UIQueries.About</TypeName>
+		</MenuType>
+		<!--Please Do not  Remove thse spaces.-->
+		<MenuType>
+			<MenuCaption>Order Book</MenuCaption>
+			<TypeName>NeatXSTWS.UI.OrderBookDetails</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Order Entry</MenuCaption>
+			<TypeName>NeatXSTWS.UI.OrderEntry</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Cover Order Entry</MenuCaption>
+			<TypeName>NeatXSTWS.UI.CoverOrderEntry</TypeName>
+		</MenuType>
+
+		<MenuType>
+			<MenuCaption>BracketOrder</MenuCaption>
+			<TypeName>NeatXSTWS.UI.BracketOrder</TypeName>
+		</MenuType>
+
+
+		<MenuType>
+			<MenuCaption>CM Order Entry</MenuCaption>
+			<TypeName>NeatXSTWS.UI.CMOrderEntry</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>FO Order Entry</MenuCaption>
+			<TypeName>NeatXSTWS.UI.OrderEntry</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Fast Order Entry</MenuCaption>
+			<TypeName>NeatXSTWS.UI.FastOrderEntry</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Auction Order Entry</MenuCaption>
+			<TypeName>NeatXSTWS.UI.AuctionOrderEntry</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Trade Book</MenuCaption>
+			<TypeName>NeatXSTWS.UI.TradeBookDetails</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Market Inquiry</MenuCaption>
+			<TypeName>NeatXSTWS.UI.MarketInquiry</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Market Queries</MenuCaption>
+			<TypeName>NeatXSTWS.UI.MarketQueries</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Online Backup</MenuCaption>
+			<TypeName>NeatXSTWS.UI.OnlineBackup</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Bhav Copy</MenuCaption>
+			<TypeName>NeatXSTWS.UI.OnlineBackup</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Options Calculator</MenuCaption>
+			<TypeName>NeatXSTWS.UI.OptionCalculator</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Index Calculator</MenuCaption>
+			<TypeName>NeatXSTWS.UI.IndexCalculator</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Refresh Local Database</MenuCaption>
+			<TypeName>NeatXSTWS.UI.RefreshLocalData</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Contract Slip</MenuCaption>
+			<TypeName>NeatXSTWS.UI.ContractSlip</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Reports</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Reports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Configuration</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Configurations</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Exchange Details</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.Exchanges</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>AdvanceStock</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.AdvanceStock</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Inst Grouping</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.InstrumentGroup</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Margin Group Multiplier</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.DifferentialExposure</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Group Haircut%</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.HairCutPercent</TypeName>
+		</MenuType>
+	        <MenuType>
+			<MenuCaption>Password Policy</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.PasswordPolicy</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>CM</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.CMRiskComputation</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Diff GE Group Multiplier</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.DifferentialExposure</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Client Master</MenuCaption>
+			<TypeName>NeatXSTWS.UI.ClientMaintenance</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Client Category Mapping</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ClientCategoryMapping</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Branch Master</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.UserMaintenance</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Unit Master</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.UserMaintenance</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>User Master</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.UserMaintenance</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Security Upload</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.SecurityUpload</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Symbol Mapping</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.SymbolMapping</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>ISIN Upload</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ISINUpload</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>ISIN Master</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ISINMaster</TypeName>
+		</MenuType>
+    <MenuType>
+      <MenuCaption>Online Surveillance</MenuCaption>
+      <TypeName>NeatXSTWS.UISurveillance.OnlineSurveillance</TypeName>
+    </MenuType>
+		<MenuType>
+			<MenuCaption>Scheme Setup</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.SchemeSetting</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Net Position</MenuCaption>
+			<TypeName>NeatXSTWS.UI.NetPosition</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>AuctionOrderBook</MenuCaption>
+			<TypeName>NeatXSTWS.UI.AuctionOrderBook</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>AuctionTradeBook</MenuCaption>
+			<TypeName>NeatXSTWS.UI.AuctionTradeBook</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>CM Net Position</MenuCaption>
+			<TypeName>NeatXSTWS.UI.NetPosition</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>FAO Net Position</MenuCaption>
+			<TypeName>NeatXSTWS.UI.NetPosition</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Top N Instruments</MenuCaption>
+			<TypeName>NeatXSTWS.UI.MarketQueries</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Top N Gainers/Losers</MenuCaption>
+			<TypeName>NeatXSTWS.UI.MarketQueries</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Most Active Instruments</MenuCaption>
+			<TypeName>NeatXSTWS.UI.MarketQueries</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Indices Broadcast</MenuCaption>
+			<TypeName>NeatXSTWS.UI.MarketQueries</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Market Movement</MenuCaption>
+			<TypeName>NeatXSTWS.UI.MarketMovement</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Spread/Comb. Order Entry</MenuCaption>
+			<TypeName>NeatXSTWS.UI.SpreadOrderEntry</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Snap Quote</MenuCaption>
+			<TypeName>NeatXSTWS.UI.SnapQuote</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Batch Order Entry</MenuCaption>
+			<TypeName>NeatXSTWS.UI.BatchOrderEntry</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Limit Maintenance</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.LimitSetting</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Instrumentwise Limit Setting</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.InstrumentWiseLimit</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>FAO Exposure</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.FAOExposure</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Bank</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.Bank</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>FAO Position</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.FAOPosition</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Notification</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.Notifications</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Custodian</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.Custodians</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Upload and Update Net Position</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.NetTradePosition</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Housekeeping</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.HouseKeeping</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Generate Sms</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.GenerateSms</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Settlement</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.Settlement</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Settlement Master</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.SettlementPeriod</TypeName>
+		</MenuType>
+		<!-- commented by mn on 01 june 2005 
+		<MenuType>
+		           <MenuCaption>Groupwise Margin % Setup</MenuCaption>
+		           <TypeName>NeatXSTWS.UIAdmin.GroupWiseMarginSetup</TypeName>
+		</MenuType>
+        -->
+		<MenuType>
+			<MenuCaption>MWPL SQ Off Setup</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.MWPL</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Full Settlement</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.FullSettlement</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Risk Computation</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.RiskComputation</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Global RM Norms</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.GlobalRM</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>OrdersBook</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.OrderBook</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>TradesBook</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.TradeBook</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Load Risk File</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.LoadRiskFile</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Instrument Master</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.InstrumentMaster</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Bhavcopy</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.BhavCopy</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Clear Growing Tables</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ClearGrowingTables</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Client Dealer Mapping</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ClientDealerMapping</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Logs</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.Logs</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Mail Orders Trades</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.MailOrdersTrades</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Commodity Exposure Multiplier</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ComdtyExposure</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Location Master</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.LocationMaster</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>MCX COC Request</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.MCXCocRequest</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Current Users Logged in</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.CurrentUserLogins</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Custodians</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.Custodians</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Holiday</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.Holidays</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Membership</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ExchangeMembership</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Member Information</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.Members</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>OnlineBackup</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.OnlineBackup</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Exchange System Parameters</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ExchangeSystemParameters</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Role Master</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.Roles</TypeName>
+		</MenuType>
+		<!--MN:20SEPT2006 :V4.2 Caption changed from Sq. Off to Square Off/Conversion-->
+		<MenuType>
+			<MenuCaption>Square Off/Conversion</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.SquareOff</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Warehouse Location Master</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.WareHouseLocationMaster</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Delivery Request</MenuCaption>
+			<TypeName>NeatXSTWS.UI.EXPLDelivery</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>EX/PL</MenuCaption>
+			<TypeName>NeatXSTWS.UI.EXPLDelivery</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Auction Order Entry</MenuCaption>
+			<TypeName>NeatXSTWS.UI.AuctionOrderEntry</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Maintainance</MenuCaption>
+			<TypeName>NeatXSTWS.UI.ClientMaintenance</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Spread Order Status</MenuCaption>
+			<TypeName>NeatXSTWS.UI.SpreadOrderStatus</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Basket Trading</MenuCaption>
+			<TypeName>NeatXSTWS.UI.BasketOrderEntry</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Open Orders</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Reports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Trades Done Today</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Reports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Advance Stock Used</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Reports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Margin Calculator</MenuCaption>
+			<TypeName>NeatXSTWS.UI.MarginCalculator</TypeName>
+		</MenuType>
+
+		<MenuType>
+			<MenuCaption>Charts</MenuCaption>
+			<TypeName>NeatXSTWS.UI.Charts</TypeName>
+		</MenuType>
+
+		<MenuType>
+			<MenuCaption>Historical Charts</MenuCaption>
+			<TypeName>NeatXSTWS.UI.HistoricalCharts</TypeName>
+		</MenuType>
+             <MenuType>
+			<MenuCaption>PayoffTable</MenuCaption>
+			<TypeName>NeatXSTWS.UI.PayoffTable</TypeName>
+		</MenuType>
+ <MenuType>
+			<MenuCaption>IV</MenuCaption>
+			<TypeName>NeatXSTWS.UI.IV</TypeName>
+		</MenuType>
+ <MenuType>
+			<MenuCaption>Option Greek Calculator</MenuCaption>
+			<TypeName>NeatXSTWS.UI.OptionGreekCalculator</TypeName>
+		</MenuType>
+<MenuType>
+			<MenuCaption>Jobbing Strategy</MenuCaption>
+			<TypeName>NeatXSTWS.UI.JobbingStrategy</TypeName>
+		</MenuType>
+
+
+ <MenuType>
+			<MenuCaption>AssesmentSheet</MenuCaption>
+			<TypeName>NeatXSTWS.UI.AssesmentSheet</TypeName>
+		</MenuType>
+
+		<MenuType>
+			<MenuCaption>Surveillance Watch</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceWatch</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Orders</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNDetails</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Trades</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNDetails</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Instruments</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNDetails</TypeName>
+		</MenuType>
+		<!--Caption changed from Net Buy/Sell to Buy/Sell -4.0.4 Patch..-->
+		<MenuType>
+			<MenuCaption>Buy/Sell</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNLimits</TypeName>
+		</MenuType>
+		<!--end of change-->
+		<MenuType>
+			<MenuCaption>Intraday TO</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNLimits</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Gross Exposure</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNLimits</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>FAO Margin</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNLimits</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Deposit Utilised</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNLimits</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Realised Loss</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNLimits</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Short Option</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNAdvStock</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Advance Stock Blocked Qty</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNAdvStock</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Premium</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNLimits</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>MtM</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNLimits</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Position</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<!--New Menu Items added in surveillance report menu-->
+		<MenuType>
+			<MenuCaption>Client Position (Inst)</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>MtM loss</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Instrument Position</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Alerts Log</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Top N Instruments Report</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Top N Users by Limit Report</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Violations</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<MenuType>
+      <MenuCaption>Orders/Trades Ratio</MenuCaption>
+      <TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+    </MenuType>
+		<!--commented by mn on 1 june 2005 
+		<MenuType>
+		          <MenuCaption>Client Upfront Margin Collection</MenuCaption>
+		          <TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType> -->
+		<MenuType>
+			<MenuCaption>Top N Users Report</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Top N By Advance Stock Report</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Commodity Exposure Report</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>FAO Open Position Report</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Portfolio</MenuCaption>
+			<TypeName>NeatXSTWS.UI.PortfolioEntry</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Setup Alerts</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SetAlerts</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>View Triggered Alerts</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.ViewAlerts</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Instrument Descriptor</MenuCaption>
+			<TypeName>NeatXSTWS.UI.InstrumentDescriptor</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Auction MW</MenuCaption>
+			<TypeName>NeatXSTWS.UI.AuctionMarketWatch</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Market Status</MenuCaption>
+			<TypeName>NeatXSTWS.UI.MarketStatus</TypeName>
+		</MenuType>
+		<!--New Menu items added for CM Var changes 26 APR 2005 -->
+		<MenuType>
+			<MenuCaption>Daily Margin</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.UploadVaRMargin</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Extreme Loss Margin</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.UploadELM</TypeName>
+		</MenuType>
+		<!--New Menu Item for Reset Pwd on 9 aug 2005 during BSE-BETA Int -->
+		<MenuType>
+			<MenuCaption>Reset Client Password</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ResetPassword</TypeName>
+		</MenuType>
+		<!--New Menu Items added in Admn-Surv under Reports menu-CM Var margin for Margin reports-->
+		<MenuType>
+			<MenuCaption>Branch</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.VaRReports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Unit</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.VaRReports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Trader</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.VaRReports</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Client</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.VaRReports</TypeName>
+		</MenuType>
+		<!--end of add-->
+		<MenuType>
+			<MenuCaption>Portfolio Index Upload</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.IndexUpload</TypeName>
+		</MenuType>
+		<!--added by kamsin on 2nd march 06 for cmvar-->
+		<MenuType>
+			<MenuCaption>CM VaR Margin</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.TopNLimits</TypeName>
+		</MenuType>
+		<!--New menu item added under Admin-Maintenance for Print Password/Pin functionality Req 48-Sovereign-->
+		<MenuType>
+			<MenuCaption>Print Password/Pin</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.PrintPassword</TypeName>
+		</MenuType>
+		<!--end of add-->
+		<!--New menu item added by spaalvi for advanced portfolio in admin login Reg47-Sovereign -->
+		<MenuType>
+			<MenuCaption>Advanced Portfolio</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.AdvancedPortfolio</TypeName>
+		</MenuType>
+		<!--end of add-->
+		<!--New menu item added by chetan for Bulk Transactions report in Surv Reports menu(Sovereign Req)-->
+		<MenuType>
+			<MenuCaption>Bulk Transactions</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<!--end of add-->
+		<!--New menu item added by rohan for clientwise limit report in admin login-->
+		<MenuType>
+			<MenuCaption>Clientwise Limit Report</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.SurveillanceReports</TypeName>
+		</MenuType>
+		<!--end of add-->
+		<!--New menu item added by MN for Terminal Wise COnsumption for ADmin login-->
+		<MenuType>
+			<MenuCaption>Terminalwise Consumption</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.VaRReports</TypeName>
+		</MenuType>
+		<!--end of add-->
+		<!--New menu item added by PK:13Sep2006 for Product Type Master Screen for ADmin login-->
+		<MenuType>
+			<MenuCaption>Product Type Master</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ProdTypeSetup</TypeName>
+		</MenuType>
+		<!--end of add-->
+                <!--New menu item added by PK:13Sep2006 for Manual Sq.Off Screen for ADmin login-->
+		<MenuType>
+			<MenuCaption>Manual SquareOff</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ManualSquareOff</TypeName>
+		</MenuType>
+		<!--end of add-->
+        <!--New menu item added by MN:27OCT2006 :for ApplyCorporateAction in Admin-Utilities menu-->
+        <MenuType>
+			<MenuCaption>Apply Corporate Action</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ApplyCorporateAction</TypeName>
+        </MenuType>  
+        <!--New menu item added by MN:28OCT2006 :Added in Admin login .Reports option-->
+        <MenuType>
+			<MenuCaption>Position Conversion</MenuCaption>
+			<TypeName>NeatXSTWS.UISurveillance.VaRReports</TypeName>
+        </MenuType>  
+        <!--end of add-->
+		    <!--New menu item added by PK:01DEC2006 for Active/Suspend Clients Screen for Admin login-->
+		<MenuType>
+			<MenuCaption>Activate / Suspend Clients</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ActiveSuspendClients</TypeName>
+		</MenuType>
+		<!--end of add-->
+		<!--New Menu Item added by Shipli for BSE Auction In Admin-->
+		<MenuType>
+			<MenuCaption>BSE Auction</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.BSEAuction</TypeName>
+		</MenuType>
+		<!--End of add-->
+		<!--New Menu Item added by Neelam for Link Failure Clients In Admin-->
+		<MenuType>
+			<MenuCaption>Link Failure Clients</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.LinkFailure</TypeName>
+		</MenuType>
+		<!--End of add-->
+		<!--New Menu Item added by Ravindra S for Incremental Trade Upload In Admin-->
+		<MenuType>
+			<MenuCaption>Incremental Trade Upload</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.IncrementalTradeUpload</TypeName>
+		</MenuType>
+		<!--End of add-->
+		<!--New Menu Item added by Ravindra S for Online Trade Book In Admin-->
+		<MenuType>
+			<MenuCaption>Online Trade Book</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.OnlineTradeBook</TypeName>
+		</MenuType>
+		<!--End of add-->
+		<!--New Menu Item added by Pranav K PK:27FEB2007 for Rejected Book In Admin-->
+		<MenuType>
+			<MenuCaption>Rejected Order Book</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.RejectedOrderBook</TypeName>
+		</MenuType>
+		<!--End of add-->
+		<MenuType>
+			<MenuCaption>History Confirmation</MenuCaption>
+			<TypeName>NeatXSTWS.UI.HistoryConfirmation</TypeName>
+		</MenuType>
+		<!--End of add-->
+		<!--New Menu Item added by ShyamKumar:02NOV2007 for Online Net Position In Admin-->
+		<MenuType>
+			<MenuCaption>Online Net Position</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.OnlineNetPosition</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>FAO open position margin</MenuCaption>
+			<TypeName>NeatXSTWS.UI.MtmOpReport</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Spread Combinations</MenuCaption>
+			<TypeName>NeatXSTWS.UI.SpreadCombinations</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>BlackListed Clients</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.BlackListedClient</TypeName>
+		</MenuType>
+		<!--New Menu Added for AMO Order Entry--> 
+                <MenuType>
+			<MenuCaption>AMO Order Entry</MenuCaption>
+			<TypeName>NeatXSTWS.UI.AMOOrderEntry</TypeName>
+		</MenuType>	
+		<MenuType>
+			<MenuCaption>ClientCustodianMapping</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.ClientCustodianMapping</TypeName>
+		</MenuType>	
+		<MenuType>
+			<MenuCaption>Margin Report</MenuCaption>
+			<TypeName>NeatXSTWS.UIAdmin.MarginReport</TypeName>
+		</MenuType>
+		<MenuType>
+			<MenuCaption>Future To Future Strategy</MenuCaption>
+			<TypeName>NeatXSTWS.UI.FutureToFutureStrategy</TypeName>
+		</MenuType>
+	</MenuTypes>
+</PluginFile>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
